@@ -1,0 +1,32 @@
+@media screen and (max-width: 1200px) {
+    /* nothing to adjust */
+}
+@media screen and (max-width: 1024px) {
+    .brand-wrapper {
+        margin-top: 13vh;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+    .brand-image img {
+        height: 210px;
+        width: 260px;
+    }
+    .brand-wrapper {
+        margin-top: 11vh;
+    }
+    .searchContainer {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .footer-container .left {
+        font-size: 11px;
+    }
+    .footer-container .right {
+        font-size: 11px;
+    }
+}

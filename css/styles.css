@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+/* container Setup */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Header Setup */
+.wrapper {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/img/mountains.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav {
+    min-height: 8vh;
+}
+nav .container {
+    display: flex;
+}
+.container .logo-image {
+    margin-top: 7px;
+}
+.logo-image img {
+    height: 7vh;
+}
+.container .nav-links {
+    align-items: center;
+    display: flex;
+}
+.nav-links {
+    margin-left: auto;
+}
+.nav-links li {
+    list-style: none;
+    padding: 0 10px;
+}
+.nav-links li a {
+    font-size: 25px;
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+/* Brand wrapper */
+.brand-wrapper {
+    margin-top: 20vh;
+}
+.brand-wrapper .brand-image {
+    text-align: center;
+}
+.brand-image img {
+    height: 250px;
+    width: 300px;
+    padding: 10px;
+}
+.brand-wrapper .searchContainer {
+    margin: auto;
+}
+.searchContainer {
+    display: grid;
+    grid-template-columns:1.5rem 4fr 1fr;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    height: 40px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.searchContainer:focus-within i {
+    display: none;
+}
+.searchContainer:focus-within .searchBox{
+    grid-column: 1/4;
+}
+
+.searchContainer:focus-within .searchBox::placeholder {
+    color: #fff;
+}
+.searchIcon {
+    background: #fff;
+    padding: 0.8rem;
+    grid-row:1;
+    z-index:2
+}
+.searchBox {
+    border: none;
+    padding: 0.5rem;
+    grid-column:2/4;
+    grid-row:1;
+    outline: none;
+}
+.searchButton {
+    background: rgb(30, 206, 168);
+    border: none;
+    color: white;
+    padding: 0.8rem;
+    grid-row:1;
+}
+
+/* Header footer */
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    align-items: center;
+}
+.footer .footer-container {
+    display: flex;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.footer-container .left {
+    cursor: pointer;
+}
+.footer-container .right {
+    margin-left: auto;
+}
+.right .footer-links {
+    display: flex;
+}
+.footer-links li {
+    list-style: none;
+    padding: 0 10px;
+}
+.footer-links li a {
+    text-decoration: none;
+    color: #fff;
+}
